@@ -1,0 +1,2 @@
+[personal_servers]
+demoserver ansible_host=example.com ansible_user=ubuntu

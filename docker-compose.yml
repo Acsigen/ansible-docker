@@ -1,0 +1,13 @@
+services:
+  ansible-docker:
+    image: ansible-docker:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ansible-docker
+    restart: no
+    tty: true
+    user: "1000:1000"
+    volumes:
+      - ./ansible:/ansible
+      - ~/.ssh/:/home/ubuntu/.ssh/:ro

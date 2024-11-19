@@ -1,0 +1,9 @@
+---
+- name: Ping Pong
+  hosts: all
+  # remote_user: ubuntu
+
+  tasks:
+    - name: PingPong
+      delegate_to: localhost
+      ansible.builtin.ping:
