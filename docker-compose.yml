@@ -8,6 +8,7 @@ services:
     restart: no
     tty: true
     user: "1000:1000"
+    tmpfs: /tmp
     volumes:
       - ./ansible:/ansible
       - ~/.ssh/:/home/ubuntu/.ssh/:ro
